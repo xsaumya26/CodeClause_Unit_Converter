@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unit Converter</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+  <div class="container center-container">
+    <h1>✧UNIT CONVERTOR✧</h1>
+    <div className="container-changer">
+        <div className="length-changer">
+        <h2 style="color: white;">length</h2>
+        <div >
+            <label>
+            <input type="number" placeholder="from" class="input-ipt" id="inputValueLength">
+           </label>
+            <select id="fromUnitLength" class="input-ipt">
+              <option value="meter">meter</option>
+              <option value="feet">Feet</option>
+              <option value="kilometer">kilometer</option>
+            </select>
+          </div>
+          <div>
+            <label>
+            <input type="number" placeholder="to" class="input-ipt" id="outputValueLength"> </label>
+            <select id="toUnitLength" class="input-ipt">
+              <option value="meter">meter</option>
+              <option value="feet">feet</option>
+              <option value="kilometer">kilometer</option>
+            </select>
+          </div>
+          <button onclick="convertLength()">Convert</button>
+          <div id="result"></div>
+        </div>
+        <div className="weight-changer">
+            <h2 style="color: white;">weight</h2>
+            <div >
+                <label>
+                <input type="number" placeholder="from" class="input-ipt" id="inputValueWeight">
+               </label>
+                <select id="fromUnitWeight" class="input-ipt">
+                  <option value="gram">gram</option>
+                  <option value="milligram">milligram</option>
+                  <option value="kilogram">kilogram</option>
+                </select>
+              </div>
+              <div>
+                <label>
+                <input type="number" placeholder="to" class="input-ipt" id="outputValueWeight"> </label>
+                <select id="toUnitWeight" class="input-ipt">
+                  <option value="gram">gram</option>
+                  <option value="milligram">milligram</option>
+                  <option value="kilogram">kilogram</option>
+                </select>
+              </div>
+              <button onclick="convertWeight()">Convert</button>
+              <div id="result"></div>
+            </div>
+         </div>
+         <div className="temperature-changer">
+            <h2 style="color: white;">temperature</h2>
+            <div >
+                <label>
+                <input type="number" placeholder="from" class="input-ipt" id="inputValueTemp">
+               </label>
+                <select id="fromUnitTemp" class="input-ipt">
+                  <option value="farenheit">farenheit</option>
+                  <option value="celsius">celsius</option>
+                  <option value="kelvin">kelvin</option>
+                </select>
+              </div>
+              <div>
+                <label>
+                <input type="number" placeholder="to" class="input-ipt" id="outputValueTemp"> </label>
+                <select id="toUnitTemp" class="input-ipt">
+                    <option value="farenheit">farenheit</option>
+                    <option value="celsius">celsius</option>
+                    <option value="kelvin">kelvin</option>
+                </select>
+              </div>
+              <button onclick="convertTemp()">Convert</button>
+              <div id="result"></div>
+            </div>
+    </div>
+    
+             </div>
+   
+
+  <script src="script1.js"></script>
+</body>
+</html>
